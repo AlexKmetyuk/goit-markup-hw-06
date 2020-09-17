@@ -55,7 +55,6 @@
         </ul>
       </div>
     </header>
-
     <!--Блок главного заголовка-->
     <section class="hero">
       <div class="conteiner">
@@ -410,11 +409,30 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <label for="subscribe" class="title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <form class="subscribe-form" action="">
+            <input
+              type="email"
+              name="mail"
+              id="subscribe"
+              placeholder="E-mail"
+            />
+            <button class="btn">Подписатся 
+              <svg class="send-icon" width="24" height="24"><use href="./image/icon-send.svg"></use></svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div data-modal data-modal-close class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal-btn">&#10006;</button>
+        <form action="">
+          <p></p>
+          <label for="user-name">Имя</label>
+          <input type="text" id="user-name">
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
