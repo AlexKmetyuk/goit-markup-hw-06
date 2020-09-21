@@ -446,6 +446,8 @@ header {
   height: 44px;
   border-radius: 50%;
 
+  fill: #afb1b8;
+
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -463,17 +465,15 @@ header {
 .social-icon {
   display: flex;
   align-items: center;
-
-  fill: #afb1b8;
-
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--white);
+
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------Clients------- */
@@ -535,11 +535,16 @@ header {
 /* --------Подвал-------- */
 
 footer {
+  align-items: baseline;
   padding: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--backgraund-color-1);
+}
+
+.footer-info {
+  line-height: 1px;
 }
 
 .page-footer .conteiner .logo {
@@ -551,11 +556,14 @@ footer {
   color: var(--white);
 }
 
+.page-footer .address {
+  margin-top: 20px;
+}
+
 .page-footer .address .item {
   display: inline-block;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
 
   color: var(--white);
 
@@ -566,9 +574,12 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.page-footer .list .contacts {
-  display: inline-block;
+.page-footer .list .item {
   margin-top: 9px;
+}
+
+.page-footer .contact-list .contacts {
+  display: inline-block;
   display: inline-block;
 
   color: rgba(255, 255, 255, 0.6);
@@ -582,14 +593,15 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-footer .list .link:hover,
-.page-footer .list .link:focus {
+.page-footer .contact-list .link:hover,
+.page-footer .contact-list .link:focus {
   color: var(--selection-text-color);
 }
 
 footer .join-in {
   padding: 0;
   margin: 0;
+  line-height: 1px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -616,10 +628,6 @@ footer .join-in .social-networks {
   padding: 0;
 }
 
-.join-in .title {
-  margin-top: 10px;
-}
-
 .join-in .social-icon {
   fill: var(--white);
 }
@@ -639,14 +647,14 @@ footer .join-in .social-networks {
 
 /* subscribe form */
 
-footer .subscribe {
+.page-footer .subscribe {
   padding: 0;
   margin: 0;
+  line-height: 1px;
 }
 
 .subscribe .title {
   display: inline-block;
-  margin-top: 10px;
   margin-bottom: 20px;
 }
 
