@@ -532,6 +532,178 @@ header {
   fill: var(--selection-text-color);
 }
 
+/* --------Подвал-------- */
+
+footer {
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--backgraund-color-1);
+}
+
+.page-footer .conteiner .logo {
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer .logo-studio {
+  color: var(--white);
+}
+
+.page-footer .address .item {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+
+  color: var(--white);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.page-footer .list .contacts {
+  display: inline-block;
+  margin-top: 9px;
+  display: inline-block;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-footer .list .link:hover,
+.page-footer .list .link:focus {
+  color: var(--selection-text-color);
+}
+
+footer .join-in {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer .title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  color: var(--white);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+footer .join-in .social-networks {
+  display: flex;
+  margin-right: 0;
+  padding: 0;
+}
+
+.join-in .title {
+  margin-top: 10px;
+}
+
+.join-in .social-icon {
+  fill: var(--white);
+}
+
+.join-in .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-in .social-link:hover,
+.join-in .social-link:focus {
+  background-color: var(--selection-text-color);
+}
+
+/* subscribe form */
+
+footer .subscribe {
+  padding: 0;
+  margin: 0;
+}
+
+.subscribe .title {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.subscribe-form input::placeholder {
+  margin-left: 16px;
+}
+
+.subscribe input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  background: transparent;
+  color: var(--white);
+}
+
+.subscribe .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+
+  background: var(--selection-text-color);
+  color: var(--white);
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.subscribe .send-icon {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+
+  fill: var(--white);
+}
+
 /* BACKDROP */
 
 .backdrop {
@@ -550,9 +722,7 @@ header {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.7);
-}
+/* modal */
 
 .modal {
   position: absolute;
@@ -726,177 +896,6 @@ header {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* --------Подвал-------- */
-
-footer {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  background-color: var(--backgraund-color-1);
-}
-
-.page-footer .conteiner .logo {
-  padding: 0;
-  margin: 0;
-}
-
-.page-footer .logo-studio {
-  color: var(--white);
-}
-
-.page-footer .address p {
-  padding: 0;
-  margin: 0;
-  margin-top: 20px;
-
-  color: var(--white);
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-}
-
-.page-footer .list .contacts {
-  margin-top: 9px;
-  display: inline-block;
-
-  color: var(--primary-text-color);
-
-  font-weight: normal;
-  font-size: 14px;
-  font-weight: 500;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-footer .list .link:hover,
-.page-footer .list .link:focus {
-  color: var(--selection-text-color);
-}
-
-footer .join-in {
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-footer .title {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
-
-  color: var(--white);
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-footer .join-in .social-networks {
-  display: flex;
-  margin-right: 0;
-  padding: 0;
-}
-
-.join-in .title {
-  margin-top: 10px;
-}
-
-.join-in .social-icon {
-  fill: var(--white);
-}
-
-.join-in .social-link {
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join-in .social-link:hover,
-.join-in .social-link:focus {
-  background-color: var(--selection-text-color);
-}
-
-/* subscribe form */
-
-footer .subscribe {
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-}
-
-.subscribe .title {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.subscribe-form {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-.subscribe-form input::placeholder {
-  margin-left: 16px;
-}
-
-.subscribe input {
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  background: transparent;
-  color: var(--white);
-}
-
-.subscribe .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 12px;
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0;
-  border-radius: 4px;
-
-  background: var(--selection-text-color);
-  color: var(--white);
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-}
-
-.subscribe .send-icon {
-  padding: 0;
-  margin: 0;
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
-
-  fill: var(--white);
 }
 
 /* -----Кнопки сортировки проектов (портфолио)----- */
